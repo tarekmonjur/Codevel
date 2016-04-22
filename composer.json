@@ -1,0 +1,13 @@
+{
+	"autoload":{
+		"classmap":[
+			"system"
+		],
+		"psr-4":{
+			"Tarek\\": "app/"
+		}
+	},
+	"require": {
+		"php-activerecord/php-activerecord": "^1.1"
+	}
+}
