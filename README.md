@@ -6,7 +6,8 @@
 
 ### How to call contoller method?
 suppose your site url is `http://example.com`. you simply write controller name and function name as like `http://example.com/ControllerName/FunctionName` 
-----
+
+---
 #### Author :
 **Name :** *Tarek Ahammed Monjur*
 
