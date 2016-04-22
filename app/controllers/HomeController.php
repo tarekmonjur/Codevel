@@ -3,7 +3,6 @@ namespace Tarek\controllers;
 
 class HomeController{
 	public function __construct(){
-		// die('home');
 	}
 
 

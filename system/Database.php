@@ -12,9 +12,4 @@ class Database{
 	}
 
 
-	public function views(){
-		echo "views";
-	}
-
-
 }
