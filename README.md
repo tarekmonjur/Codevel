@@ -10,6 +10,8 @@ suppose your site url is `http://example.com`. you simply write controller name 
 ---
 #### Author :
 **Name :** *Tarek Ahammed Monjur*
+**Email : *tarekmonjur@gmail.com*
+**Mobile :** *+88 01832308565* 
 
 
 
