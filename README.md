@@ -9,9 +9,9 @@ suppose your site url is `http://example.com`. you simply write controller name 
 
 ---
 #### Author :
-_Name :_ *Tarek Ahammed Monjur*
-_Email :_ *tarekmonjur@gmail.com*
-_Mobile :_ *+88 01832308565* 
+**Name :** *Tarek Ahammed Monjur*_
+**Email :** *tarekmonjur@gmail.com*_
+**Mobile :** *+88 01832308565* 
 
 
 
