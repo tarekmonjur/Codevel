@@ -1,6 +1,5 @@
 <?php 
 
-// use Tarek\models\Users as Users;
 use Tarek\controllers\HomeController as Home;
 
 require_once __DIR__.'/app/start.php';
@@ -67,7 +66,7 @@ if(base_url() !='' || base_url() !=" "){
 
 
 				if(file_exists($controller__file_location)){
-					echo $fully_qualified_name = $app_name . '\\' . $controller_location . '\\' . $class_name;
+					$fully_qualified_name = $app_name . '\\' . $controller_location . '\\' . $class_name;
 					$Controller = new $fully_qualified_name();
 
 					if(isset($functionName) && !empty($functionName)){
@@ -90,9 +89,4 @@ if(base_url() !='' || base_url() !=" "){
 }
 
 
-
-// Users::create([
-// 		'full_name' => 'tarek',
-// 		'email' => 'tarek@gmail.com'
-// 	]);
 

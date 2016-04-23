@@ -1,8 +1,9 @@
 <?php namespace Tarek\controllers;
 
-class Controller{
+class Controller extends \BaseController{
 	public function __construct(){
-		// die('controller');
+		parent::__construct();
 	}
+	
 
 }

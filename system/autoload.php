@@ -39,3 +39,5 @@ if(file_exists($config_file)){
 	echo "The app/config/config.php file not found";
 	exit;
 }
+
+new Model();

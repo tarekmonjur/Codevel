@@ -1,8 +1,11 @@
 <?php 
 namespace Tarek\controllers\admin;
 
-class DashboardController{
+use Tarek\controllers\Controller;
+
+class DashboardController extends Controller{
 	public function __construct(){
+		parent::__construct();
 
 	}
 
