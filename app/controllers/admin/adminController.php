@@ -11,7 +11,11 @@ class DashboardController extends Controller{
 
 
 	public function index(){
-		views('welcome');
+		$data['title'] = "Welcome";
+		$data['page'] = "Welcome Page";
+		$data['controller'] = "Admin Controller";
+
+		views('welcome',$data);
 	}
 	
 

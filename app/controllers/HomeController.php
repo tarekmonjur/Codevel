@@ -11,7 +11,13 @@ class HomeController extends Controller{
 
 	public function index(){
 //		print_r(Users::first());
-		views('welcome');
+//		$data['user'] = Users::first();
+
+		$data['title'] = "Welcome";
+		$data['page'] = "Welcome Page";
+		$data['controller'] = "Home Controller";
+
+		views('welcome',$data);
 	}
 
 	public function home(){
@@ -21,12 +27,20 @@ class HomeController extends Controller{
 		// 		'email' => 'tarek@gmail.com'
 		// 	]);
 
-		views('home');
+		$data['title'] = "Home";
+		$data['page'] = "Home Page";
+		$data['controller'] = "Home Controller";
+
+		views('home',$data);
 	}
 
 
 	public function about(){
-		views('about');
+		$data['title'] = "About Us";
+		$data['page'] = "About Page";
+		$data['controller'] = "Home Controller";
+
+		views('about',$data);
 	}
 
 

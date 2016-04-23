@@ -12,7 +12,11 @@ class dashboardController extends Controller
 
 
     public function index(){
-        views('welcome');
+        $data['title'] = "Welcome";
+        $data['page'] = "Welcome Page";
+        $data['controller'] = "Dashboard Controller";
+
+        views('welcome',$data);
     }
     
 

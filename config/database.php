@@ -27,7 +27,7 @@ return [
         'pgsql' => [
             'driver'    => 'mysql',
             'host'      => 'localhost',
-            'database'  => 'db_simplicity',
+            'database'  => 'psr_4',
             'username'  =>  'root',
             'password'  =>  'root',
             'charset'   => 'utf8',

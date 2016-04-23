@@ -1,8 +1,9 @@
 <html>
 <head>
-	<title>Welcome</title>
+	<title><?php echo $title?></title>
 </head>
 <body>
-<h1>You currently in HomeController</h1>
+<h1>You currently in <?php echo $page.', '.$controller;?></h1>
+
 </body>
 </html>

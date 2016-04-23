@@ -21,13 +21,18 @@ if(file_exists($config_file)){
 		define('views_path', __DIR__."/../app/views/");
 	}
 
+	
+
 	function base_url(){
 		return base_url;
 	}
 
-	function views($viwes=null){
+	function views($viwes=null,$data=null){
 		$file = views_path.$viwes.'.php';
 		if(file_exists($file)){
+			if(!empty($data)){
+				extract($data);
+			}
 			include $file;
 		}else{
 			echo "The " .$file." not found";
