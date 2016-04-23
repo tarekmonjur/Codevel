@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a38b693-a729-4706-bffd-52f025f4281d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/HomeController.php" afterPath="$PROJECT_DIR$/app/controllers/HomeController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/admin/adminController.php" afterPath="$PROJECT_DIR$/app/controllers/admin/adminController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/config.php" afterPath="$PROJECT_DIR$/config/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.php" afterPath="$PROJECT_DIR$/config/database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/autoload.php" afterPath="$PROJECT_DIR$/system/autoload.php" />
-    </list>
+    <list default="true" id="0a38b693-a729-4706-bffd-52f025f4281d" name="Default" comment="" />
     <ignored path="customMVC.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -375,12 +368,12 @@
       <workItem from="1461262578381" duration="42000" />
       <workItem from="1461262641156" duration="379000" />
       <workItem from="1461341277419" duration="6981000" />
-      <workItem from="1461392550171" duration="17566000" />
+      <workItem from="1461392550171" duration="17721000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25085000" />
+    <option name="totallyTimeSpent" value="25240000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
