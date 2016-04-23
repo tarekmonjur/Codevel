@@ -6,4 +6,6 @@ return [
 
 	'views_path' => __DIR__."/../app/views/",
 
+	'default_controller' => 'HomeController'
+
 ];

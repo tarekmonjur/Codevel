@@ -5,13 +5,13 @@ return [
     // if the fetch is true system try to connect database.use false for stop database connection.
     'fetch' => 'true',
 
-    'default' => 'mysql',
+    'default' => 'sqlite',
 
     'connections' => [
 
         'sqlite' => [
             'driver'   => 'sqlite',
-            'database' =>'/database.sqlite',
+            'database' =>__DIR__.'/database.sqlite',
         ],
 
         'mysql' => [

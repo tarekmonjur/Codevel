@@ -20,8 +20,23 @@ if(file_exists($config_file)){
 	}else{
 		define('views_path', __DIR__."/../app/views/");
 	}
-
 	
+	if($config['default_controller']){
+		define('default_controller',$config['default_controller']);
+	}else{
+		define('default_controller','HomeController');
+	}
+
+	function defaultController(){
+		$default_controller = __DIR__.'/../app/controllers/'.default_controller.'.php';
+		if(file_exists($default_controller)) {
+			$fully_qualified_name = 'Tarek\\controllers\\'.default_controller;
+			$Controller = new $fully_qualified_name();
+			$Controller->index();
+		}else{
+			echo "Default Controller not found";
+		}
+	}
 
 	function base_url(){
 		return base_url;

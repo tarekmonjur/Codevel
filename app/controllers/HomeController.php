@@ -1,7 +1,7 @@
 <?php 
 namespace Tarek\controllers;
 
-use Tarek\models\Users;
+//use Tarek\models\Users;
 
 class HomeController extends Controller{
 	public function __construct(){

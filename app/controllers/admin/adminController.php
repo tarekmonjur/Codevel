@@ -3,7 +3,7 @@ namespace Tarek\controllers\admin;
 
 use Tarek\controllers\Controller;
 
-class DashboardController extends Controller{
+class adminController extends Controller{
 	public function __construct(){
 		parent::__construct();
 

@@ -1,6 +1,4 @@
-<?php 
-
-use Tarek\controllers\HomeController as Home;
+<?php
 
 require_once __DIR__.'/app/start.php';
 
@@ -20,7 +18,7 @@ if(base_url() !='' || base_url() !=" "){
 	if(!empty($get_uri) || $get_uri !=""){
 
 		if($get_url == $url){
-			Home::index();
+			defaultController();
 		}else{
 			$uri = str_replace($url, "", $get_url);
 			$uris = explode('/',$uri);
@@ -82,7 +80,7 @@ if(base_url() !='' || base_url() !=" "){
 		}
 		
 	}else{
-		Home::index();
+		defaultController();
 	}
 }else{
 	echo "Enter the base url form app/config/config.php file<br>";
