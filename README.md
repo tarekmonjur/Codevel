@@ -13,7 +13,7 @@ Go to `config/database.php` file and configure database connection
 ### How to call contoller method?
 suppose your site url is `http://example.com`. you simply write controller name and function name as like `http://example.com/ControllerName/FunctionName` 
 
-#### How to load View page and send data?
+### How to load View page and send data?
 Simply just call view function as like `views('PageName')` if you want to send data that page use second parameter as like `views('PageName',$data)`
 
 ---
