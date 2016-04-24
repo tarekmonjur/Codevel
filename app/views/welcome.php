@@ -1,9 +1,5 @@
-<html>
-<head>
-	<title><?php echo $title?></title>
-</head>
-<body>
-<h1>You currently in <?php echo $page.', '.$controller;?></h1>
-
-</body>
-</html>
+<div class="jumbotron">
+	<h1>Welcome!</h1>
+	<h2>CustomMVC PHP framework.</h2>
+	<p><a class="btn btn-primary btn-lg" href="https://github.com/tarekmonjur/customMVC" role="button">Learn more</a></p>
+</div>

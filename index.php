@@ -68,12 +68,16 @@ if(base_url() !='' || base_url() !=" "){
 					$Controller = new $fully_qualified_name();
 
 					if(isset($functionName) && !empty($functionName)){
-						$Controller->$functionName();
+						if(method_exists($Controller,$functionName)) {
+							$Controller->$functionName();
+						}else{
+							echo $controller__file_location." file <b>".$functionName."</b> function not found";
+						}
 					}else{
 						$Controller->index();
 					}
 				}else{
-					echo $Controller_location." Controller file not found";
+					echo $controller__file_location." Controller file not found";
 				}
 					
 			}

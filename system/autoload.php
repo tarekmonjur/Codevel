@@ -20,12 +20,14 @@ if(file_exists($config_file)){
 	}else{
 		define('views_path', __DIR__."/../app/views/");
 	}
+
 	
 	if($config['default_controller']){
 		define('default_controller',$config['default_controller']);
 	}else{
 		define('default_controller','HomeController');
 	}
+
 
 	function defaultController(){
 		$default_controller = __DIR__.'/../app/controllers/'.default_controller.'.php';
@@ -38,9 +40,15 @@ if(file_exists($config_file)){
 		}
 	}
 
-	function base_url(){
-		return base_url;
+
+	function base_url($para=null){
+		if(!empty($para)){
+			return base_url.$para;
+		}else{
+			return base_url;
+		}
 	}
+
 
 	function views($viwes=null,$data=null){
 		$file = views_path.$viwes.'.php';
@@ -53,6 +61,12 @@ if(file_exists($config_file)){
 			echo "The " .$file." not found";
 			exit;
 		}
+	}
+
+
+	function redirect($redirect=null){
+		header('Location: '.base_url($redirect));
+		exit;
 	}
 
 }else{
