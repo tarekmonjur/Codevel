@@ -1,4 +1,13 @@
 {
+	"name":"custom/MVC",
+	"description":"MVC base PHP custom framework like as codeigniter and laravel",
+	"keyword":[
+		"MVC",
+		"framework",
+		"php"
+	],
+	"type":"project",
+	"license":"",
 	"autoload":{
 		"classmap":[
 			"system"
