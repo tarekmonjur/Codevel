@@ -18,7 +18,8 @@ Simply just call view function as like `views('PageName')` if you want to send d
 
 ### How to check request and get Input data?
 call request method pass check parameter as like `if($this->request('post'))`.If you want to know which request is just call `$this->request()`.
-call input method get input data as example `$this->input('firstname')` its return just single field data.If you want to get all data, call `$this->inputAll()` method.
+
+Call input method get input data as example `$this->input('firstname')` its return just single field data.If you want to get all data, call `$this->inputAll()` method.
 
 ---
 #### Author :
