@@ -38,6 +38,7 @@ class HomeController extends Controller{
 
 
 	public function user(){
+
 		$data['title'] = "Add User";
 		$data['page'] = "User Page";
 		$data['controller'] = "Home Controller";
@@ -50,16 +51,24 @@ class HomeController extends Controller{
 
 
 	public function add_user(){
-		 $result = Users::create([
-		 		'firstname' => 'tarek',
-		 		'lastname' => 'monjur',
-		 		'username' => 'tarekahammed',
-		 		'email' => 'tarekmonjur@gmail.com',
-		 		'password' => md5('123456')
-		 	]);
 
-		if($result)
-			redirect('HomeController/home');
+		if($this->request('post') && $this->input('submit')){
+
+			$data['firstname'] = $this->input('firstname');
+			$data['lastname'] = $this->input('lastname');
+			$data['username'] = $this->input('username');
+			$data['email'] = $this->input('email');
+			$data['password'] = md5($this->input('password'));
+
+			$result = Users::create($data);
+
+			if($result) {
+				redirect('HomeController/home');
+			}else{
+				redirect('HomeController/user');
+			}
+
+		}
 		
 	}
 
