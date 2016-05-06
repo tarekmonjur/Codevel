@@ -21,6 +21,9 @@ call request method pass check parameter as like `if($this->request('post'))`.If
 
 Call input method get input data as example `$this->input('firstname')` its return just single field data.If you want to get all data, call `$this->inputAll()` method.
 
+#### How to get segment data ?
+Just call segment method for get segment data as like `$this->segment(2)`.
+
 ---
 #### Author :
  - **Name :** *Tarek Ahammed Monjur* 
