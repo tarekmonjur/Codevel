@@ -2,28 +2,21 @@
 
 require_once __DIR__.'/app/start.php';
 
-if(base_url() !='' || base_url() !=" "){
-	$get_uri =  (isset($_SERVER["REQUEST_URI"]))? $_SERVER["REQUEST_URI"] : "";
-	$get_url = $_SERVER["HTTP_HOST"].$get_uri;
-	$base_url = base_url();
+$base_url = base_url();
+if( $base_url !='' || $base_url !=" "){
 
-	if(stristr($base_url, "http://")){
-		$url = str_replace("http://", "", $base_url);
-	}elseif(stristr($base_url, "https://")){
-		$url = str_replace("http://", "", $base_url);
-	}else{
-		$url = $base_url;
-	}
+	$full_url = url();
+	$full_uri = uri();
+	$url = cut_http($base_url);
 
-	if(!empty($get_uri) || $get_uri !=""){
+	if(!empty($full_uri) || $full_uri !=""){
 
-		if($get_url == $url){
+		if($full_url == $url){
 			defaultController();
 		}else{
-			$uri = str_replace($url, "", $get_url);
+			$uri = str_replace($url, "", $full_url);
 			$uris = explode('/',$uri);
-//			 print_r($uris);
-			
+
 			foreach ($uris as $key=>$value) {
 				if($key == '0'){
 					$controllerName = $value;

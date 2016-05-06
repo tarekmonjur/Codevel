@@ -15,7 +15,7 @@ class HomeController extends Controller{
 		$data['page'] = "Welcome Page";
 		$data['controller'] = "Home Controller";
 		$data['active'] = "";
-
+		
 		views('common/header',$data);
 		views('welcome',$data);
 		views('common/footer');

@@ -69,6 +69,34 @@ if(file_exists($config_file)){
 		exit;
 	}
 
+
+
+	function url(){
+		$get_uri =  uri();
+		$url =  $_SERVER["HTTP_HOST"].$get_uri;
+		return $url;
+
+	}
+
+
+	function uri(){
+		$uri =  (isset($_SERVER["REQUEST_URI"]))? $_SERVER["REQUEST_URI"] : "";
+		return $uri;
+	}
+
+
+
+	function cut_http($base_url){
+		if(stristr($base_url, "http://")){
+			$url = str_replace("http://", "", $base_url);
+		}elseif(stristr($base_url, "https://")){
+			$url = str_replace("http://", "", $base_url);
+		}else{
+			$url = $base_url;
+		}
+		return $url;
+	}
+
 }else{
 	echo "The app/config/config.php file not found";
 	exit;

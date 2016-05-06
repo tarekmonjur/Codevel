@@ -8,6 +8,22 @@ class BaseController
     }
 
 
+    protected function segment($segment=null){
+        if(!empty($segment) || $segment !='') {
+            $full_url = url();
+            $url = cut_http(base_url());
+
+            $uri = str_replace($url, "", $full_url);
+            $uris = explode('/', $uri);
+            
+            if(isset($uris[$segment-1]))
+                return $uris[$segment-1];
+        }else{
+            return false;
+        }
+    }
+
+
 
    protected function request($method=null){
        if(isset($_SERVER['REQUEST_METHOD'])) {
