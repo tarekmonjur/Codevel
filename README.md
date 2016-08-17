@@ -1,5 +1,5 @@
-# Custom PHP Framework.
-##This is custom MVC, based on PHP psr-4 standard.
+# Codevel PHP Framework.
+##This is MVC framework, based on PHP psr-4 standard.
 ###Support namespace and PhpActiveRecord.
 ---
 #### See the documentation for database query [phpActiveRecord] (http://www.phpactiverecord.org/docs/index/main).
